@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumbWays | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR  -->
+    <nav>
+        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <ul>
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="myproject.html">My Project</a></li>
+            <li class="item-collapse"><a href="testimonial.html">Testimonials</a></li>
+        </ul>
+        <div class=" item-collapse">
+            <a href="contact.html"><button class="nav-btn active">Contact Me</button></a>
+        </div>
+        <div id="barsmenu">
+            <button onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+          </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="myproject.html">My Project</a>
+        <a href="contact.html" class="hamburger-active">Contact Me</a>
+        <a href="testimonial.html">Testimonials</a>
+    </div>
+    <!-- NAVBAR  -->
+    <div id="container">
+        <h1>GET IN TOUCH</h1>
+        <form action="">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="">
+                <label for="number">Phone Number</label>
+                <input type="number" id="number">
+            </div>
+            <div class="">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                     <option value="" hidden>Select</option>
+                     <option>FrontEnd</option>
+                     <option>BackEnd</option>
+                     <option>FullStack</option>
+                </select>
+            </div>
+            <div class="">
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="10" cols="10"></textarea>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="submitData()">Submit</button>
+            </div>   
+        </form>
+    </div>
+    <script src="contact.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

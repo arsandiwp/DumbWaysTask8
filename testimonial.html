@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DumbWays | Testimonials</title>
+   <link rel="stylesheet" href="testimonial.css">
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+       <!-- NAVBAR -->
+       <nav>
+         <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+         <ul>
+             <li class="item-collapse"><a href="index.html">Home</a></li>
+             <li class="item-collapse"><a href="myproject.html">My Project</a></li>
+             <li class="item-collapse"><a href="testimonial.html" class="active">Testimonials</a></li>
+         </ul>
+         <div class=" item-collapse">
+             <a href="contact.html"><button class="nav-btn">Contact Me</button></a>
+         </div>
+         <div id="barsmenu">
+             <button onclick="openHamburger()">
+               <i class="fa-2x fa-solid fa-bars"></i>
+             </button>
+           </div>
+     </nav>
+ 
+     <div class="hamburger-nav-container" id="hamburger-nav-container">
+         <a href="index.html" class="hamburger-active">Home</a>
+         <a href="myproject.html">My Project</a>
+         <a href="contact.html">Contact Me</a>
+         <a href="testimonial.html">Testimonials</a>
+     </div>
+     <!-- NAVBAR  -->
+
+     <!-- CONTENT  -->
+     <div class="container">
+      <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Stars</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonials()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+      <section class="testimonials" id="testimonials">
+        <!-- <div class="testimonial">
+          <img
+            src="https://infonegeri.id/wp-content/uploads/2022/10/Power-Rangers-Foto-Moviexplorers.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Power Ranger</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="https://cdn.idntimes.com/content-images/duniaku/post/20230201/ultraman-b9d0c409b187ffa11152fd1a4fce8e0f.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Ultramen</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="https://cdn.idntimes.com/content-images/duniaku/post/20221214/kamen-rider-geats-all-kamen-rider-4ed8a2c7aa3c38c8858a88747b7fdd1b.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Kamen Rider</p>
+        </div> -->
+      </section>
+    </div>
+     <!-- CONTENT  -->
+
+     <script src="index.js"></script>
+     <script src="testimonial.js"></script>
+</body>
+</html>

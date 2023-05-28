@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DumbWays | Projrct</title>
+   <link rel="stylesheet" href="style2.css">
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!-- NAVBAR  -->
+   <nav>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <ul>
+         <li class="item-collapse"><a href="index.html">Home</a></li>
+         <li class="item-collapse"><a href="myproject.html" class="active">My Project</a></li>
+         <li class="item-collapse"><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+      <div class=" item-collapse">
+            <a href="contact.html"><button class="nav-btn">Contact Me</button></a>
+      </div>
+      <div id="barsmenu">
+         <button onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+         </button>
+      </div>
+  </nav>
+
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html" class="hamburger-active">My Project</a>
+      <a href="contact.html">Contact Me</a>
+      <a href="testimonial.html">Testimonials</a>
+  </div>
+   <!-- NAVBAR  -->
+
+   <!-- CONTENT  -->
+   <div id="container">
+      <h1>ADD MY PROJECT</h1>
+      <form action="" onsubmit="addBlog(event)">
+         <div class="">
+            <label for="project">Project Name</label>
+            <input type="text" id="project">
+         </div>
+         <div class="date">
+            <div class="">
+               <label for="start-date">Start Date</label>
+               <input type="date" id="start-date">
+            </div>
+            <div class="">
+               <label for="end-date">End Date</label>
+               <input type="date" id="end-date">
+            </div>
+         </div>
+         
+         <div class="">
+            <label for="description">Description</label>
+            <textarea name="" id="description" cols="30" rows="10"></textarea>
+         </div>
+         <div class="">
+            <label for="Technologies">Technologies</label>
+            <div class="">
+               <input type="checkbox" name="nodejs" id="nodejs"> Node Js
+               <input type="checkbox" name="html" id="html"> HTML
+            </div>
+            <div class="">
+               <input type="checkbox" name="php" id="php"> PHP
+               <input type="checkbox" name="reactjs" id="reactjs"> React JS
+            </div>  
+         </div>
+         <div class="">
+            <label for="upload">Upload Image</label>
+            <input type="file" name="" id="upload" >
+         </div>
+         <div class="submit">
+            <button onclick="submitData()">submit</button>
+         </div>
+      </form>
+   </div>
+   <!-- CONTENT  -->
+
+   <!-- CONTENT BLOG -->
+   <div class="container">
+      <h1 class="title-blog">MY PROJECT</h1>
+      <div class="flex" id="content">
+         <div class="card" >
+            <img src="img/hp.jpg" alt="blog">
+            <a href="detail-project.html" target="_blank"><p class="title">Dumbways Mobile App - 2021</p></a>
+            <p>durasi : 3 bulan</p>
+            <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
+            <p>
+               <i class="fa-brands fa-node-js"></i>
+               <i class="fa-brands fa-html5"></i>
+               <i class="fa-brands fa-php"></i>
+               <i class="fa-brands fa-react"></i>
+            </p>
+            <div class="button">
+               <button>edit</button>
+               <button>delete</button>
+            </div>  
+         </div>
+         <div class="card" >
+            <img src="img/hp.jpg" alt="blog">
+            <a href="detail-project.html" target="_blank"><p class="title">Dumbways Mobile App - 2021</p></a>
+            <p>durasi : 3 bulan</p>
+            <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="button">
+               <button>edit</button>
+               <button>delete</button>
+            </div>  
+         </div> 
+         <div class="card" >
+            <img src="img/hp.jpg" alt="blog">
+            <a href="detail-project.html" target="_blank"><p class="title">Dumbways Mobile App - 2021</p></a>
+            <p>durasi : 3 bulan</p>
+            <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="button">
+               <button>edit</button>
+               <button>delete</button>
+            </div>  
+         </div>
+         <div class="card" >
+            <img src="img/hp.jpg" alt="blog">
+            <a href="detail-project.html" target="_blank"><p class="title">Dumbways Mobile App - 2021</p></a>
+            <p>durasi : 3 bulan</p>
+            <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="button">
+               <button>edit</button>
+               <button>delete</button>
+            </div>  
+         </div>   
+      </div>
+   </div>
+   <!-- CONTENT BLOG -->
+
+   
+   <script src="blog.js"></script>
+   <script src="index.js"></script>
+</body>
+</html>
